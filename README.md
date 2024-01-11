@@ -218,62 +218,34 @@ npm run format
 
 ## Server Libraries and Dependencies
 
-### `bcryptjs`
+`bcryptjs`: This [package](https://www.npmjs.com/package/bcryptjs]) is used for securely hashing passwords, converting plain text into hashed formats before database storage, thereby enhancing data security against breaches.
 
-This [package](https://www.npmjs.com/package/bcryptjs]) is used for securely hashing passwords, converting plain text into hashed formats before database storage, thereby enhancing data security against breaches.
-
-### `cors`
-
-Acts as middleware for Express, enabling Cross-Origin Resource Sharing (CORS).\
+`cors`: Acts as middleware for Express, enabling Cross-Origin Resource Sharing (CORS).\
 [CORS](https://github.com/expressjs/cors#readme) is crucial for web application security, as it regulates how a web application can make requests to different domains, ensuring controlled and secure interaction with external resources.
 
-### `cross-env`
+`cross-env`: This [package](https://github.com/kentcdodds/cross-env) enables the consistent use of environment variables across various operating systems, crucial for ensuring smooth script execution in both Windows and Unix-like environments.
 
-This [package](https://github.com/kentcdodds/cross-env) enables the consistent use of environment variables across various operating systems, crucial for ensuring smooth script execution in both Windows and Unix-like environments.
+`crypto-js`: This [library](https://github.com/brix/crypto-js) provides cryptographic functionality in JavaScript. Primarily used in our application for secure encryption and decryption operations, it's essential for generating secure random tokens, hashing, and other cryptographic operations to ensure data security.
 
-### `crypto-js`
+`dotenv`: This [package](https://github.com/motdotla/dotenv) assists in managing environment variables, enhancing security and flexibility by separating configuration from code. It's particularly vital for the secure handling of sensitive data, such as API keys and database credentials.
 
-This [library](https://github.com/brix/crypto-js) provides cryptographic functionality in JavaScript. Primarily used in our application for secure encryption and decryption operations, it's essential for generating secure random tokens, hashing, and other cryptographic operations to ensure data security.
+`express`: [Express](https://expressjs.com/) is a fast, unopinionated, and minimalist web framework for Node.js, ideal for creating web applications and APIs efficiently and without unnecessary complexity.
 
-### `dotenv`
+`express-mongo-sanitize`: The [express-mongo-sanitize](https://github.com/fiznool/express-mongo-sanitize) package is a middleware for Express.js applications that helps prevent NoSQL injection attacks by sanitizing user-supplied data before it is used in MongoDB queries. NoSQL injection is a security vulnerability that can occur when untrusted data is used in MongoDB queries without proper validation or sanitization.
 
-This [package](https://github.com/motdotla/dotenv) assists in managing environment variables, enhancing security and flexibility by separating configuration from code. It's particularly vital for the secure handling of sensitive data, such as API keys and database credentials.
+`helmet`: The [helmet](https://helmetjs.github.io/) package is a collection of middleware functions for securing Express.js applications by setting various HTTP headers. These headers help protect against common web vulnerabilities by providing an additional layer of security.
 
-### `express`
+`joi`: [Joi](https://github.com/hapijs/joi) is a comprehensive schema description language and validator for JavaScript. In our project, it is specifically utilized for validating environment variables. This ensures that our application's configuration adheres to expected formats and standards, providing an additional layer of security and reliability by preventing misconfiguration and potential runtime errors.
 
-[Express](https://expressjs.com/) is a fast, unopinionated, and minimalist web framework for Node.js, ideal for creating web applications and APIs efficiently and without unnecessary complexity.
+`jsonwebtoken`: Implements [JSON Web Tokens (JWT)](https://github.com/auth0/node-jsonwebtoken) for secure information transmission as JSON objects. Primarily used for user authentication and session management, it issues a JWT upon login, which authenticates further server requests, verifying user identity.
 
-### `express-mongo-sanitize`
+`mongoose`: [Mongoose](https://mongoosejs.com/) is an Object Data Modelling (ODM) library for MongoDB and Node.js, offering a schema-based solution to effectively model application data and interact with MongoDB databases using JavaScript or TypeScript.
 
-The [express-mongo-sanitize](https://github.com/fiznool/express-mongo-sanitize) package is a middleware for Express.js applications that helps prevent NoSQL injection attacks by sanitizing user-supplied data before it is used in MongoDB queries. NoSQL injection is a security vulnerability that can occur when untrusted data is used in MongoDB queries without proper validation or sanitization.
+`nodemailer`: A module for Node.js applications to allow easy email sending. It simplifies the process of sending emails from within the application, whether it's for user verification emails, password reset links, notifications, or any other email-based communication. [The library](https://nodemailer.com/) supports various transport options, including SMTP.
 
-### `helmet`
+`slugify`: [Slugify](https://github.com/simov/slugify) is a JavaScript library that is commonly used to create URL-friendly slugs from strings. The Slugify library takes a string as input and transforms it into a URL-friendly slug by removing special characters, converting spaces to hyphens, and ensuring that the resulting string is generally safe for use in a URL.
 
-The [helmet](https://helmetjs.github.io/) package is a collection of middleware functions for securing Express.js applications by setting various HTTP headers. These headers help protect against common web vulnerabilities by providing an additional layer of security.
-
-### `joi`
-
-[Joi](https://github.com/hapijs/joi) is a comprehensive schema description language and validator for JavaScript. In our project, it is specifically utilized for validating environment variables. This ensures that our application's configuration adheres to expected formats and standards, providing an additional layer of security and reliability by preventing misconfiguration and potential runtime errors.
-
-### `jsonwebtoken`
-
-Implements [JSON Web Tokens (JWT)](https://github.com/auth0/node-jsonwebtoken) for secure information transmission as JSON objects. Primarily used for user authentication and session management, it issues a JWT upon login, which authenticates further server requests, verifying user identity.
-
-### `mongoose`
-
-[Mongoose](https://mongoosejs.com/) is an Object Data Modelling (ODM) library for MongoDB and Node.js, offering a schema-based solution to effectively model application data and interact with MongoDB databases using JavaScript or TypeScript.
-
-### `nodemailer`
-
-A module for Node.js applications to allow easy email sending. It simplifies the process of sending emails from within the application, whether it's for user verification emails, password reset links, notifications, or any other email-based communication. [The library](https://nodemailer.com/) supports various transport options, including SMTP.
-
-### `slugify`
-
-[Slugify](https://github.com/simov/slugify) is a JavaScript library that is commonly used to create URL-friendly slugs from strings. The Slugify library takes a string as input and transforms it into a URL-friendly slug by removing special characters, converting spaces to hyphens, and ensuring that the resulting string is generally safe for use in a URL.
-
-### `validator`
-
-The [validator](https://github.com/validatorjs/validator.js) package is a library for string validation and sanitization in JavaScript. It provides a wide range of functions to validate and sanitize strings, making it a useful tool for input validation and data cleaning in applications, particularly in web development.
+`validator`: The [validator](https://github.com/validatorjs/validator.js) package is a library for string validation and sanitization in JavaScript. It provides a wide range of functions to validate and sanitize strings, making it a useful tool for input validation and data cleaning in applications, particularly in web development.
 
 ---
 
@@ -281,45 +253,25 @@ The [validator](https://github.com/validatorjs/validator.js) package is a librar
 
 Our project uses a variety of development tools to streamline the development process and ensure code quality. Below is a list of the development dependencies specified in our `package.json` file:
 
-### `eslint`
+`eslint`: A static code analysis [tool](https://eslint.org/) that helps identify and fix patterns in JavaScript code, enhancing consistency and preventing bugs.
 
-A static code analysis [tool](https://eslint.org/) that helps identify and fix patterns in JavaScript code, enhancing consistency and preventing bugs.
+`eslint-config-prettier`: This [package](https://github.com/prettier/eslint-config-prettier) disables conflicting ESLint rules to ensure seamless integration with Prettier, optimizing code formatting consistency.
 
-### `eslint-config-prettier`
+`eslint-plugin-import`: This [plugin](https://github.com/import-js/eslint-plugin-import) enhances code quality and consistency by supporting linting of ES2015+ import/export syntax, helping prevent issues like misspelling in file paths and import names.
 
-This [package](https://github.com/prettier/eslint-config-prettier) disables conflicting ESLint rules to ensure seamless integration with Prettier, optimizing code formatting consistency.
+`eslint-plugin-jest`: This [plugin](https://github.com/jest-community/eslint-plugin-jest) provides ESLint rules specifically for Jest, aiding in enforcing best practices and identifying common errors in Jest test files.
 
-### `eslint-plugin-import`
+`eslint-plugin-prettier`: This [plugin](https://github.com/prettier/eslint-plugin-prettier) integrates Prettier into ESLint, running it as a rule and reporting format differences as ESLint issues, thus combining code formatting with linting.
 
-This [plugin](https://github.com/import-js/eslint-plugin-import) enhances code quality and consistency by supporting linting of ES2015+ import/export syntax, helping prevent issues like misspelling in file paths and import names.
+`jest`: [Jest](https://jestjs.io/) is a simple yet comprehensive JavaScript testing framework, offering a ready-to-use solution for effective testing.
 
-### `eslint-plugin-jest`
+`mongodb-memory-server`: This [tool](https://github.com/nodkz/mongodb-memory-server) programmatically launches a real MongoDB server within Node.js for testing or development purposes.
 
-This [plugin](https://github.com/jest-community/eslint-plugin-jest) provides ESLint rules specifically for Jest, aiding in enforcing best practices and identifying common errors in Jest test files.
+`nodemon`: [Nodemon](https://www.npmjs.com/package/nodemon) is a utility that automatically restarts your server when code changes are detected, improving the development workflow.
 
-### `eslint-plugin-prettier`
+`prettier`: [Prettier](https://prettier.io/) is an opinionated code formatter that supports multiple languages, ensuring a consistent code style throughout your project.
 
-This [plugin](https://github.com/prettier/eslint-plugin-prettier) integrates Prettier into ESLint, running it as a rule and reporting format differences as ESLint issues, thus combining code formatting with linting.
-
-### `jest`
-
-[Jest](https://jestjs.io/) is a simple yet comprehensive JavaScript testing framework, offering a ready-to-use solution for effective testing.
-
-### `mongodb-memory-server`
-
-This [tool](https://github.com/nodkz/mongodb-memory-server) programmatically launches a real MongoDB server within Node.js for testing or development purposes.
-
-### `nodemon`
-
-[Nodemon](https://www.npmjs.com/package/nodemon) is a utility that automatically restarts your server when code changes are detected, improving the development workflow.
-
-### `prettier`
-
-[Prettier](https://prettier.io/) is an opinionated code formatter that supports multiple languages, ensuring a consistent code style throughout your project.
-
-### `supertest`
-
-A [SuperAgent-driven](https://github.com/ladjs/supertest) library for testing HTTP servers, allowing you to test your REST API endpoints.
+`supertest`: A [SuperAgent-driven](https://github.com/ladjs/supertest) library for testing HTTP servers, allowing you to test your REST API endpoints.
 
 ---
 
