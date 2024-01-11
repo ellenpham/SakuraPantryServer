@@ -855,26 +855,6 @@ Sprint 3-2
 
 ![sprint3-2](./docs/trelloBoard/sprint3-2.png)
 
-### Proficiencies and Growth Opportunities 
-
-**Irene:**  
-
-Irene possesses an extensive range of knowledge and technical skills in both front-end and back-end development. Her profound expertise, particularly in Authentication and Authorization, is notably distinct. For this project, we entrusted her with the critical responsibility of managing authentication and authorization tasks spanning from the front-end to the back-end. Irene's deep comprehension and skilful handling of these areas were vital in enhancing the security and functionality of our application.  
-
-An area for further development is enhancing communication, particularly in navigating language barriers. Irene's commitment to improving in this area has been evident, and continued progress will undoubtedly enrich team collaboration. Overcoming these challenges will not only lead to clearer conveyance of ideas but also deepen the team's collective understanding of the project's goals and methodologies. 
-
-**Ellen:**  
-
-Ellen is an exceptionally talented and versatile team member, displaying remarkable front-end and back-end development skills. Her technical expertise and deep understanding shone through, especially in back-end tasks. She skilfully managed complex challenges like designing databases, developing server-side logic, and building APIs. Ellen's thorough attention to detail, particularly in error handling and maintaining data integrity, allowed her to develop the back end with notable stability and efficiency. 
-
-Ellen is currently working on improving her adherence to the DRY principle in code writing. While understanding the significance of clean and modular code, she acknowledges instances of redundancy in her codebase. To address this, Ellen has integrated code reviews into her workflow, seeking feedback to identify areas for improvement. She is also investing time in expanding her knowledge of design patterns to effectively eliminate code duplication. 
-
-**Mana:**  
-
-Mana demonstrated flexibility in handling tasks across both back-end and front-end development. Her skills were particularly utilized in enhancing the application's user interface, contributing significantly to an improved user experience. Her ability to adapt and contribute effectively to different aspects of the project underscores her value as a versatile team member. 
-
-Mana sometimes requires additional time to complete a task, indicating an opportunity for further development in time management and efficiency. Additionally, she occasionally needs support from other team members due to certain gaps in her skills. This highlights a potential area for professional growth, where enhancing her expertise through training or mentorship could be beneficial. 
-
 ---
 
 ## User Testing
