@@ -76,7 +76,9 @@ const globalErrorHandler = (err, req, res, next) => {
   if (envConfig.env === 'development') {
     sendErrorDev(err, res);
   } else if (envConfig.env === 'production') {
-    let error = { ...err };
+    // fix: create new `error` object from `err` so it will inherit all properties from `err`
+    // as the spread syntax `error = { ...err }` does not copy all properties from the `err` object
+    let error = Object.create(err);
 
     if (error.name === 'CastError') {
       error = handleCastErrorDB(error);
