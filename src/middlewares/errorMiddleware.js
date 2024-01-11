@@ -80,17 +80,20 @@ const globalErrorHandler = (err, req, res, next) => {
 
     if (error.name === 'CastError') {
       error = handleCastErrorDB(error);
+      return sendErrorProd(error, res);
     }
 
     if (error.code === 11000) {
       error = handleDuplicateFieldsDB(error);
+      return sendErrorProd(error, res);
     }
 
     if (error.name === 'ValidationError') {
       error = handleValidationErrorDB(error);
+      return sendErrorProd(error, res);
     }
 
-    sendErrorProd(error, res);
+    sendErrorProd(err, res);
   } else if (envConfig.env === 'test') {
     sendErrorTest(err, res);
   }
